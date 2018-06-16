@@ -1,0 +1,49 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "globals": {
+    "window": true,
+    "localStorage": true,
+    "document": true,
+    "sessionStorage": true,
+    "alert": true,
+    "$": true
+  },
+  "rules": {
+    "max-len": [1, 150, 2, {"ignoreComments": true}],
+    "no-script-url": "off",
+    "jsx-a11y/label-has-for": "off",
+    "jsx-a11y/img-has-alt": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "no-underscore-dangle": "off",
+    "no-confusing-arrow": "off",
+    "arrow-parens": ["error", "always"],
+    "no-console": 0,
+    "radix": ["error", "as-needed"],
+    "react/jsx-filename-extension": [1, {"extensions": [".js", ".jsx"]}],
+    "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"],
+    "react/no-danger": "off",
+    "linebreak-style": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    // use custom error object
+    "prefer-promise-reject-errors": "off",
+    // some action, not use buttons
+    "jsx-a11y/click-events-have-key-events": "off",
+    // keep jquery method this.
+    "func-names":"off",
+    "react/prop-types": "off",
+    "class-methods-use-this": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": { "paths": [{
+        "tcg-components": "./src/components/index.js",
+        "tcg-redux": "./src/redux/index.js",
+        "common-lib": "./src/base.js"
+      }] }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.flex-container {
+  display: flex;
+  height: 300px;
+  padding: 15px;
+  background-color: #61a0f8;
+  /*修改以下值試試看 row | row-reverse | column | column-reverse;*/
+  flex-direction: row;
+}
+
+.flex-container .a {
+  width: 100px;
+}
+
+.flex-container .c {
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  background-color: #f08bc3;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.flex-2 {
+  flex-grow: 2;
+  flex-shrink: 1;
+  flex-basis: 0;
+  background-color: #f08bc3;
+}
+
+.header span {
+  display: inline-block;
+  margin-left: 20px;
+}
